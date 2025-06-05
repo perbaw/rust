@@ -1,0 +1,4 @@
+#+TITLE: The Rust Programming Language
+
+* Installation and the Basics
+Rustup : a CL tool for managing Rust versions and associated tools

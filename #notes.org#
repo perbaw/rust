@@ -1,0 +1,19 @@
+#+TITLE: The Rust Programming Language
+
+* The Basics
+- Compiling and running the program are separate steps.
+- Rustup : a CL tool for managing Rust versions and associated tools
+
+** Cargo
+Build system and package manager for Rust.
+- cargo new : create new cargo project
+- cargo init : create Cargo.toml for a pre-existing project
+- cargo build : creates an executable in target/debug/<dirname>
+  The default build is a debug build.
+  Running cargo build for the first time also creates a Cargo.lock file at the top level.
+  + Keeps track of the exact versions of dependencies in the project.
+- cargo run : compile and run
+- cargo check : checks code to make sure it compiles, but doesn't produce an executable.
+- cargo build --release : compile project with optimizations, when it is ready for release
+  + Executable is created in target/release instead of target/debug
+  + Use for benchmarking.
